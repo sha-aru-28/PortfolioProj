@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Sharmi Arunprasath
+- **Dot Number**: arunprasath.1
+- **Due Date**: 4:10 @ 9/18
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +98,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+As of right now, I'm not 100% positive of what I want my career to be after I graduate. I'm thinking that I might want to do something most likely in data security. But I'm interested in many things. I love to spend time outside, read, crochet, and just craft. I also spend most of my time listening to music (probably about 75% of my day no matter what I'm doing), or watching a show, movie, or something on like Youtube. Specifically in terms of this project, if I can I want to make a small game. I really enjoyed working on a project where I developed Connect4 in a previous class, but this might be too complicated though. I's also like make a library for keep track of shows and movies I've watched where I can log info about it. I've struggled with finding a good app for this. And if I make this, I can personalize it how I'd like and it would be were useful for me.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -131,8 +115,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +182,97 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: CrossyRoadGame
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - A simplified version of a game similar to Crossy Road. It would be a grid with 3-5 lanes with moving obstacles, and a movable player.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - void setPlayerPosition(int x, int y) — set the player position to coordinates (x,y)
+    - int[] getPlayerPosition() — return the player position as an array [x, y]
+    - void addObstacle(int lane, int position) — add an obstacle at position (x,y) in the grid
+    - void removeObstacle(int lane, int position) — remove an obstacle at that lane/position
+    - void clear() — reset the player position, remove all obstacles, reset score/lives
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - void movePlayer(Direction d) — move player one cell in the given direction (up, left, right)
+    - void moveObstacles() — move all obstacles forward one step
+    - boolean checkCollision() — returns true if an obstacle is at the player’s position
+    - int score() — returns current score
+    - boolean isGameOver() — returns true if collision or out-of-bounds or no lives left
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes because the player position, obstacle set, and scores all change over time
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Probably, I'm just not sure right now.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes movePlayer(up) can call like getPlayerPosition() to find the currect position and then add 1 to the y to move the player. checkCollision() can can also call getPlayerPosition() and compare it with obstacles added/removed using addObstacle/removeObstacle.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Playlist
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Just creates like an ordered playlist of songs. Kernel methods will hae the basic functions to add, get, remove, and reset songs, and the secondary methods can have features like find, next, previous, has song, and size.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addSong(String song) — append song to the end of the playlist
+    - String removeSong(int index) — remove and return the song at index
+    - String getSong(int index) — return the song title at index
+    - int getCurrentIndex() — return current index
+    - void clear() — remove all songs and reset current index
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - void shuffle() — randomly reorder the playlist
+    - String nextSong() — change the current index by adding 1 and returning the song
+    - String previousSong() — change the current index by subtracting 1 and returning the song
+    - boolean contains(String song) — true if song exists in playlist
+    - int size() — return the number of songs in the playlist
+    - insertSong(int index, String song) — place a song at index
+    - String nowPlaying() — return the song at the current index
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes because the songs and the index changes every time
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't think so
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, like nextSong() can call getCurrentIndex() and add 1 to i to return the new song.
+
+- Component Design #3: EntertainmentTracker
+  - **Description**:
+    - Tracks movies and TV shows a user wants to watch/already watched (maybe even books read and a TBR list) and logs data about each item (watched status, rating, notes, type, etc).
+  - **Kernel Methods**:
+    - void addItem(String title) — add an item with title to the watchlist
+    - String removeItem(int index) — remove and return the title at index
+    - String getItemTitle(int index) — return the title at index
+    - void clear() — remove all items
+    - int size() — return number of items
+  - **Secondary Methods**:
+    - void markWatched(int index) — set watched flag for item at index
+    - boolean isWatched(int index) — return the watched status
+    - void rate(int index, int stars) — set a rating (1–10) for item at index
+    - Integer getRating(int index) — return rating
+    - String[] search(String keyword) — return titles containing keyword
+    - void addNote(int index, String note) — add a short note to an item
+    - String getItem(int index) — returns all data about the item
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes the items’ watched status, ratings, and notes change and also the items can be added/removed.
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - Yes I could create an internal class to like store title, watched status, rating, notes, and type.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - Not Sure
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yeah, filterByWatched can call kernel methods such as getItemTitle and isWatched for each item
 
 ## Post-Assignment
 
@@ -269,8 +280,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -288,13 +297,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2025.09.19
 
 ### Added
-
-- Designed a <!-- insert name of component 1 here --> component
-- Designed a <!-- insert name of component 2 here --> component
-- Designed a <!-- insert name of component 3 here --> component
+- Designed a CrossyRoadGame component
+- Designed a Playlist component
+- Designed a EntertainmentTracker component
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
@@ -309,8 +317,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -319,11 +325,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
