@@ -76,9 +76,9 @@ the following form: YYYY.0M.0D.
 ## 2025.09.19
 
 ### Added
-- Designed a CrossyRoadGameState component
+- Designed a CrossyRoadGame component
 - Designed a Playlist component
-- Designed a Watchlist component
+- Designed a EntertainmentTracker component
 
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
