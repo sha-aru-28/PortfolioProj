@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * simplified implementation for proof of concept for crossy road.
  */
-public class ConceptCRGame {
+public class CRGame {
 
     /**
      * player position x value.
@@ -75,7 +75,7 @@ public class ConceptCRGame {
     /**
      * constructor initializing a new game.
      */
-    public ConceptCRGame() {
+    public CRGame() {
         obstacles = new ArrayList<Obstacle>();
         clear();
     }
@@ -218,7 +218,7 @@ public class ConceptCRGame {
      *
      */
     public static void main(String[] args) {
-        ConceptCRGame game = new ConceptCRGame();
+        CRGame game = new CRGame();
         Random rand = new Random();
         System.out.println("Welcome to Crossy Road Game!");
         for (int i = 0; i < 3; i++) {

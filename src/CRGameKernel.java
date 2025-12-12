@@ -1,7 +1,7 @@
 /**
  * kernel interface for the concept crossy road game.
  */
-public interface ConceptCRGameKernel extends Standard<ConceptCRGame> {
+public interface CRGameKernel extends Standard<CRGame> {
 
     /**
      * clears and resets all game values to start state.
