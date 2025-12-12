@@ -27,16 +27,4 @@ public interface CRGameEnhanced extends CRGameKernel {
      */
     void printGrid();
 
-    /**
-     * returns the player position as two integers via parameters.
-     *
-     * @param outX
-     *            an array of length >= 1 where outX[0] will be set to player x
-     * @param outY
-     *            an array of length >= 1 where outY[0] will be set to player y
-     * @requires outX.length >= 1 and outY.length >= 1
-     * @ensures outX[0] = playerX and outY[0] = playerY
-     */
-    @Override
-    void getPlayerPosition(int[] outX, int[] outY);
 }
