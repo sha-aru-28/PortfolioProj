@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
+=======
+
+import components.standard.Standard;
+
+>>>>>>> Stashed changes
 /**
  * kernel interface for the concept crossy road game.
  */

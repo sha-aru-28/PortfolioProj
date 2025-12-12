@@ -1,15 +1,12 @@
-<<<<<<< Updated upstream
+
 import java.util.ArrayList;
 import java.util.List;
-=======
-
->>>>>>> Stashed changes
 import java.util.Random;
 
 /**
  * simplified implementation for proof of concept for crossy road.
  */
-public class ConceptCRGame {
+public class CRGameConcept {
 
     /**
      * player position x value.
@@ -66,8 +63,8 @@ public class ConceptCRGame {
          *            y position
          */
         Obstacle(int xPos, int yPos) {
-            x = xPos;
-            y = yPos;
+            this.x = xPos;
+            this.y = yPos;
         }
     }
 
@@ -79,9 +76,9 @@ public class ConceptCRGame {
     /**
      * constructor initializing a new game.
      */
-    public ConceptCRGame() {
-        obstacles = new ArrayList<Obstacle>();
-        clear();
+    public CRGameConcept() {
+        this.obstacles = new ArrayList<Obstacle>();
+        this.clear();
     }
 
     /**
@@ -93,8 +90,8 @@ public class ConceptCRGame {
      *            y coordinate
      */
     public void setPlayerPosition(int x, int y) {
-        playerX = x;
-        playerY = y;
+        this.playerX = x;
+        this.playerY = y;
     }
 
     /**
@@ -107,18 +104,18 @@ public class ConceptCRGame {
      */
     public void addObstacle(int x, int y) {
         Obstacle o = new Obstacle(x, y);
-        obstacles.add(o);
+        this.obstacles.add(o);
     }
 
     /**
      * clears and resets all game values to start state.
      */
     public void clear() {
-        playerX = WIDTH / 2;
-        playerY = HEIGHT - 1;
-        obstacles.clear();
-        score = 0;
-        gameOver = false;
+        this.playerX = WIDTH / 2;
+        this.playerY = HEIGHT - 1;
+        this.obstacles.clear();
+        this.score = 0;
+        this.gameOver = false;
     }
 
     /**
@@ -129,17 +126,17 @@ public class ConceptCRGame {
      */
     public void movePlayer(String direction) {
         if (direction.equalsIgnoreCase("up")) {
-            playerY = playerY - 1;
+            this.playerY = this.playerY - 1;
         } else if (direction.equalsIgnoreCase("down")) {
-            playerY = playerY + 1;
+            this.playerY = this.playerY + 1;
         } else if (direction.equalsIgnoreCase("left")) {
-            playerX = playerX - 1;
+            this.playerX = this.playerX - 1;
         } else if (direction.equalsIgnoreCase("right")) {
-            playerX = playerX + 1;
+            this.playerX = this.playerX + 1;
         }
-        if (playerX < 0 || playerX >= WIDTH || playerY < 0
-                || playerY >= HEIGHT) {
-            gameOver = true;
+        if (this.playerX < 0 || this.playerX >= WIDTH || this.playerY < 0
+                || this.playerY >= HEIGHT) {
+            this.gameOver = true;
         }
     }
 
@@ -147,7 +144,7 @@ public class ConceptCRGame {
      * moves all obstacles down 1 step.
      */
     public void moveObstacles() {
-        for (Obstacle o : obstacles) {
+        for (Obstacle o : this.obstacles) {
             o.y = o.y + 1;
         }
     }
@@ -159,9 +156,9 @@ public class ConceptCRGame {
      */
     public boolean checkCollision() {
         boolean check = false;
-        for (Obstacle o : obstacles) {
-            if (o.x == playerX && o.y == playerY) {
-                gameOver = true;
+        for (Obstacle o : this.obstacles) {
+            if (o.x == this.playerX && o.y == this.playerY) {
+                this.gameOver = true;
                 check = true;
             }
         }
@@ -174,7 +171,7 @@ public class ConceptCRGame {
      * @return true if game over and false if not
      */
     public boolean isGameOver() {
-        return gameOver;
+        return this.gameOver;
     }
 
     /**
@@ -183,7 +180,7 @@ public class ConceptCRGame {
      * @return current score
      */
     public int score() {
-        return score;
+        return this.score;
     }
 
     /**
@@ -194,11 +191,11 @@ public class ConceptCRGame {
             for (int x = 0; x < WIDTH; x++) {
                 boolean printed = false;
 
-                if (playerX == x && playerY == y) {
+                if (this.playerX == x && this.playerY == y) {
                     System.out.print("P ");
                     printed = true;
                 } else {
-                    for (Obstacle o : obstacles) {
+                    for (Obstacle o : this.obstacles) {
                         if (o.x == x && o.y == y) {
                             System.out.print("O ");
                             printed = true;
@@ -222,10 +219,11 @@ public class ConceptCRGame {
      *
      */
     public static void main(String[] args) {
-        ConceptCRGame game = new ConceptCRGame();
+        CRGameConcept game = new CRGameConcept();
         Random rand = new Random();
+        final Integer t = 3;
         System.out.println("Welcome to Crossy Road Game!");
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < t; i++) {
             int randomX = rand.nextInt(WIDTH);
             int randomY = rand.nextInt(HEIGHT / 2);
             game.addObstacle(randomX, randomY);

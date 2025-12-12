@@ -50,8 +50,6 @@ course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -140,8 +138,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +303,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+Because of this project, I understand a tiny bit better but it genuinely makes me so scared for the "real world" coding experience trying to work and code. Because I feel like the in class stuff is pretty different and there's so much other stuff I need to understand and practice in standard java.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Documentation and the javadoc writing, I just went through the group projects and used the documentation in those as a baseline.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+I think it is something, I enjoy. I like the ability to be able to just build a tool that I can use and through this project, I've already begun brainstorming some other projects I can do in my free time like the tracker I had as an alternative when we were brainstorming.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +322,41 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Figuring out how to design and implement modular software components that actually work together
+
+Writing thorough unit tests in JUnit to make sure everything behaves like it should
+
+Thinking carefully about different use cases and how the API should be designed for them
+
+Keeping a software project organized with a proper directory structure
+
+Documenting my code clearly and making examples that actually help someone understand how it works
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+Built a modular Crossy Road game component with interfaces, abstract classes, and kernel implementation
+
+Created a complete JUnit test suite that covers every method in the component
+
+Made multiple use cases to show how the component works and how the API should be used
+
+Organized the whole project with a professional directory structure and clear documentation
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+It was kind of frustrating at times, so I might not go into game development. But I do like coding so I'll just have to explore other specializations and pathways.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I guess I could continue with small projects like this and continue to build them on my own but also work on getting more certifications. Exploring different areas of software development so i can find what interests me the best and what I like. I will most likely be reaching out to you in the future because you have been so helpful and my past professors I feel like I don't have that kind of sense of wanting to reach out to them after the end of the course. C:
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
