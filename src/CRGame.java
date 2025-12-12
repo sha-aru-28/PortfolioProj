@@ -104,6 +104,9 @@ public final class CRGame {
             game.movePlayer(move);
             game.moveObstacles();
             game.checkCollision();
+
+            int x = rand.nextInt(game.width());
+            game.addObstacle(x, 0);
         }
 
         System.out.println("GAME OVER!");

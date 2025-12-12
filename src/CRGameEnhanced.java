@@ -1,10 +1,6 @@
 /**
  * enhanced interface for the concept crossy road game.
  */
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 public interface CRGameEnhanced extends CRGameKernel {
 
     /**
