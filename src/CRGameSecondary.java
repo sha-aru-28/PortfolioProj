@@ -4,7 +4,7 @@
  *
  * author: Sharmi
  */
-public abstract class CRGameSecondary implements CRGame {
+public abstract class CRGameSecondary implements CRGameEnhanced {
 
     /**
      * default constructor. calls the parent constructor so everything is set
@@ -113,11 +113,11 @@ public abstract class CRGameSecondary implements CRGame {
         if (obj == this) {
             return true;
         }
-        if (!(obj instanceof CRGame)) {
+        if (!(obj instanceof CRGameEnhanced)) {
             return false;
         }
 
-        CRGame other = (CRGame) obj;
+        CRGameEnhanced other = (CRGameEnhanced) obj;
 
         int[] px1 = new int[1];
         int[] py1 = new int[1];
@@ -143,12 +143,18 @@ public abstract class CRGameSecondary implements CRGame {
         int[] px = new int[1];
         int[] py = new int[1];
         this.getPlayerPosition(px, py);
+        final Integer t = 31;
+        final Integer s = 17;
 
-        int h = 17;
-        h = 31 * h + px[0];
-        h = 31 * h + py[0];
-        h = 31 * h + this.score();
-        h = 31 * h + (this.isGameOver() ? 1 : 0);
+        int h = s;
+        h = t * h + px[0];
+        h = t * h + py[0];
+        h = t * h + this.score();
+        if (this.isGameOver()) {
+            h = t * h + 1;
+        } else {
+            h = t * h + 0;
+        }
 
         return h;
     }

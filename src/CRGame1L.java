@@ -94,8 +94,30 @@ public class CRGame1L extends CRGameSecondary {
      * @ensures result is a new empty CRGame1L
      */
     @Override
-    public CRGame newInstance() {
+    public CRGameEnhanced newInstance() {
         return new CRGame1L();
+    }
+
+    /**
+     * Moves all the state from the given source CRGame into this one.
+     *
+     * @param source
+     *            the CRGame to take state from
+     * @clears source
+     * @updates this
+     * @ensures this = #source and source is empty
+     */
+    @Override
+    public void transferFrom(CRGameEnhanced source) {
+
+        CRGame1L src = (CRGame1L) source;
+        this.playerX = src.playerX;
+        this.playerY = src.playerY;
+        this.score = src.score;
+        this.gameOver = src.gameOver;
+        this.obstacles = src.obstacles;
+        src.obstacles = new ArrayList<>();
+        src.clear();
     }
 
     /**
