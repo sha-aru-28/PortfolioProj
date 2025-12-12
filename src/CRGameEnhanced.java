@@ -1,11 +1,8 @@
 /**
  * enhanced interface for the concept crossy road game.
  */
-<<<<<<< Updated upstream
-public interface ConceptCRGame extends ConceptCRGameKernel {
-=======
+
 public interface CRGameEnhanced extends CRGameKernel {
->>>>>>> Stashed changes
 
     /**
      * returns whether the game is over.

@@ -3,11 +3,7 @@ import components.standard.Standard;
 /**
  * kernel interface for the concept crossy road game.
  */
-<<<<<<< Updated upstream
-public interface ConceptCRGameKernel extends Standard<ConceptCRGame> {
-=======
 public interface CRGameKernel extends Standard<CRGameEnhanced> {
->>>>>>> Stashed changes
 
     /**
      * clears and resets all game values to start state.

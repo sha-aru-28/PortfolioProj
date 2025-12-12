@@ -4,11 +4,7 @@ import java.util.Scanner;
 /**
  * Main file for the Crossy Road implementation.
  */
-<<<<<<< Updated upstream
-public class ConceptCRGame {
-=======
 public final class CRGame {
->>>>>>> Stashed changes
 
     /**
      * Private constructor.
@@ -17,24 +13,7 @@ public final class CRGame {
     }
 
     /**
-<<<<<<< Updated upstream
-     * list storing all obstacles in the game.
-     */
-    private List<Obstacle> obstacles;
-
-    /**
-     * constructor initializing a new game.
-     */
-    public ConceptCRGame() {
-        obstacles = new ArrayList<Obstacle>();
-        clear();
-    }
-
-    /**
-     * sets the player position.
-=======
      * Prints the grid.
->>>>>>> Stashed changes
      *
      * @param game
      *            the game instance
@@ -84,11 +63,7 @@ public final class CRGame {
      *
      */
     public static void main(String[] args) {
-<<<<<<< Updated upstream
-        ConceptCRGame game = new ConceptCRGame();
-=======
         Scanner in = new Scanner(System.in);
->>>>>>> Stashed changes
         Random rand = new Random();
 
         CRGame1L game = new CRGame1L();
