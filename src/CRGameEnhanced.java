@@ -1,8 +1,8 @@
 
 /**
- * enhanced interface for the concept crossy road game.
+ * enhanced interface for the crossy road game.
  */
-public interface ConceptCRGame extends ConceptCRGameKernel {
+public interface CRGameEnhanced extends CRGameKernel {
 
     /**
      * returns whether the game is over.
@@ -37,5 +37,6 @@ public interface ConceptCRGame extends ConceptCRGameKernel {
      * @requires outX.length >= 1 and outY.length >= 1
      * @ensures outX[0] = playerX and outY[0] = playerY
      */
+    @Override
     void getPlayerPosition(int[] outX, int[] outY);
 }
