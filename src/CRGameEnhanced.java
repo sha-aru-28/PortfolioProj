@@ -2,6 +2,7 @@
  * enhanced interface for the concept crossy road game.
  */
 
+=======
 public interface CRGameEnhanced extends CRGameKernel {
 
     /**
