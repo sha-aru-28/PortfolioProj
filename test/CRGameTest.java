@@ -1,3 +1,4 @@
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -8,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * JUnit tests for the secondary behaviors provided by CRGame.
+ * JUnit tests for CRGame.
  */
 public class CRGameTest {
 

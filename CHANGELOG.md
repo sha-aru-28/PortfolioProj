@@ -11,6 +11,31 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
+- Finished enhanced methods for Secondary using only the kernel accessors
+- Added use cases
+- Added test cases
+
+### Updated
+
+- Finalized documentation, use cases, files, and testing (could not update directory as it was causing errors)
+
+
+## 2025.12.10
+
+### Added
+
+- Added CRGame1L kernel
+- Fixed up some of the naming for better flow between files
+
+### Updated
+
+- Fixed up some of the Kernel Methods
+
+
+## 2025.12.10
+
+### Added
+
 - Implemented the abstract class CRGameSecondary
 - Finished all enhanced methods in Secondary using only kernel methods
 - Added toString(), equals(), and hashCode() using kernel accessors
