@@ -6,12 +6,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## 2025.09.19
+
+## 2025.12.10
 
 ### Added
-- Designed a CrossyRoadGame component
-- Designed a Playlist component
-- Designed a EntertainmentTracker component
+
+- Implemented the abstract class CRGameSecondary
+- Finished all enhanced methods in Secondary using only kernel methods
+- Added toString(), equals(), and hashCode() using kernel accessors
+- Added the kernel accessors needed by Secondary: width, height, obstacleCount, getObstaclePosition, currentScore, and gameOverFlag
+
+### Updated
+
+- Adjusted interfaces and the proof of concept so Secondary only relies on kernel methods
+
+
+
+## 2025.10.23
+
+### Added
+
+- Designed kernel and enhanced interfaces for crossy road game component
+
+### Updated
+
+- Changed design to include documented interface contracts
+
 
 ## 2025.10.09
 
@@ -23,12 +43,10 @@ the following form: YYYY.0M.0D.
 
 - Changed design to include 5x5 grid, player movement, obstacle movement, collision checking, and the grid
 
-## 2025.10.23
+
+## 2025.09.19
 
 ### Added
-
-- Designed kernel and enhanced interfaces for crossy road game component
-
-### Updated
-
-- Changed design to include documented interface contracts
+- Designed a CrossyRoadGame component
+- Designed a Playlist component
+- Designed a EntertainmentTracker component
